@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // max-width: 50vw;
+}
+
+
+html{
+    background-color: rgba(81, 84, 176, 0.523);
+}
+
+body{
+    display: inline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    min-width: 100%;
+    max-width: 90%;
+
+    background-image: linear-gradient(to right bottom, rgb(71, 71, 189),rgb(71, 126, 189), rgba(4, 4, 120, 0.612)) ;
+    // max-width: 100vw;
+    // max-width: 70vw;
+}

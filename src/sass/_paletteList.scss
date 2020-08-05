@@ -1,0 +1,95 @@
+.palette-master-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    // height: 100%;
+
+}
+
+.palette-container {
+    @include palette-flex;
+
+
+&-create{
+    @include palette-flex;
+    width: 60vw;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0rem;
+
+}
+
+
+
+&-small{
+    @include palette-flex;
+
+    width: 25%;
+   
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+
+    transition: all .2s ease-in-out;
+    &:hover{
+        transform: scale(1,1);
+      
+        box-shadow: inset;
+        margin-left: 4rem;
+        margin-right: 4rem;
+
+    }
+ }
+}
+
+.color-container{
+    overflow: hidden;
+    cursor: pointer;
+
+    width: 25%;
+    height: 3rem;
+    padding: 0.5rem;
+}
+.color-container-full{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    width: 25%;
+    height: 7rem;
+
+    color: transparent;
+    transition: all .3s ease-in-out;
+    h2{
+        display: inline;
+        align-self: center;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+        z-index: 10;
+        border-radius: 1rem;
+        color: white;
+    }
+}
+
+
+
+.full-palette{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
